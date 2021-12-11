@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(43deg, #264653, #2a9d8f, #e9c46a, #f4a261, #e76f51);
+    background-size: 1800% 1800%;
+    -webkit-animation: animeBO 80s ease infinite;
+    -moz-animation: animeBO 80s ease infinite;
+    animation: animeBO 80s ease infinite;
+}
+
+@-webkit-keyframes animeBO {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-moz-keyframes animeBO {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@keyframes animeBO {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}

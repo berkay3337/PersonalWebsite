@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+    .fa {
+        padding: 35px;
+        height: 140px;
+        font-size: 70px;
+        width: 140px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+
+    .fa-github {
+        background: #465057;
+        color: white;
+    }
+</style>
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+</style>
+<!-- <link rel="stylesheet" href="/static/css/animation.css"> -->
+
+
+<body>
+    <div class="container marketing">
+
+        <div class="row">
+            <div class="col-lg-4 offset-lg-1">
+                <span class="fs-1">
+                    <a href="https://linkedin.com/in/berkay-özgen" class="fa fa-linkedin rounded-circle"></a>
+                </span>
+                <h2>LinkedIn Sayfam</h2>
+                <p>Yukarıdaki logoya ya da aşağıdaki butona tıklayarak linkedin hesabımı ziyaret edebilirsiniz.</p><br>
+                <p><a class="btn btn-primary" href="https://linkedin.com/in/berkay-özgen">LinkedIn Sayfam &raquo;</a>
+                </p>
+            </div>
+
+            <div class="col-lg-4 offset-lg-2">
+                <span class="fs-1">
+                    <a href="https://github.com/berkay3337" class="fa fa-github rounded-circle"></a>
+                </span>
+                <h2>Github Sayfam</h2>
+                <p>Yukarıdaki logoya ya da aşağıdaki butona tıklayarak github sayfamı ziyaret edebilir yapmış olduğum
+                    çalışmaları görebilirsiniz.</p>
+                <p><a class="btn btn-primary" href="https://github.com/berkay3337">Github Sayfam &raquo;</a></p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Herkese Merhaba!</h2>
+                <p class="lead">Ben Berkay.Şu anda kişisel web sitemdesiniz.Bu sitede benle ilgili bilgilere ulaşabilir
+                    farklı konularda yazmış olduğum blog yazılarımı okuyabilirsiniz.Bu siteyi hem kodlama yeteneklerimi
+                    geliştirmek,tecrübe edinmek hem de özgürce kullanıp kendimi tanıtabileceğim bir platforma sahip
+                    olmak için yaptım.
+                    Benle ilgili daha detaylı bilgiye ulaşmak için aşağıdaki butona tıklayabilirsiniz.
+                </p>
+                <p><a class="btn btn-primary" href="{% url 'aboutme' %}">Hakkımda &raquo;</a></p>
+            </div>
+            <div class="col-md-5">
+                <img src="/static/img/böz.png" alt="" style="width: 500px;height: 500px">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Blog Yazılarım</h2>
+                <p class="lead">Bu sitede farklı konu başlıklarıyla alakalı yazılar paylaşıyorum.Konular ne ile alakalı
+                    diye soracak olursanız canımın istediği,merak ettiğim,ilgimi çeken her konu hakkında paylaşımlar
+                    yapıyorum.Ancak bilmenizi isterim ki hiçbir konu hakkında profesyonellik iddam yok.Sadece sizlere
+                    araştırmalarım ve kendi edindiğim tecrübeler sonucu elde ettiğim bilgileri sunuyorum.
+                    Yazılarımı okuyup fikrilerinizi benle paylaşabilirsiniz.Aşağıdaki butona tıklayarak yazılarıma
+                    erişebilirsiniz. </p>
+                <p><a class="btn btn-primary" href="{% url 'post:index' %}">Yazılarım &raquo;</a></p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="/static/img/blog.jpg" alt="" style="width: 500px;height: 500px">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+    </div>
+
+    {% endblock %}
